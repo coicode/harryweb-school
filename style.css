@@ -1,0 +1,52 @@
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital@1&display=swap" rel="stylesheet">
+<style>
+ body{
+  margin:0;
+}
+ strong {
+  color:orange
+}
+ h1 {
+  font-size:55px;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  margin:0;
+  padding: 20px;
+}
+ a {
+  color:gray;
+  text-decoration:none;
+}
+ ol{
+  border-right: 1px solid gray;
+  width: 100px;
+  margin:0;
+  padding:20px;
+}
+ #headFont {
+   font-family: 'Lora', serif;
+}
+ #grid ol{
+  padding-left: 33px
+}
+ #grid {
+  display:grid;
+  grid-template-columns: 150px 1fr;
+}
+ #grid #article {
+  padding-left: 25px;
+  font-family: 'Karla', sans-serif;
+}
+ @media(max-width:800px){
+  #grid {
+    display:block;
+  }
+  ol{
+    border-right:none;
+  }
+  h1 {
+    border-bottom: none;
+  }
+}
+</style>
