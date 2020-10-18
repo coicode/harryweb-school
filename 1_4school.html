@@ -86,10 +86,10 @@
                  console.log(scores[1]);
                  if(scores[1] < 0.8) {
                    console.log('normal');
-                   document.getElementById("java").style.opacity = "0";
+                   document.getElementById("java").style.opacity = "1";
                  } else {
                    console.log('snap');
-                   document.getElementById("java").style.opacity = "1";
+                   document.getElementById("java").style.opacity = "0";
                  }
                  for (let i = 0; i < classLabels.length; i++) {
                      const classPrediction = classLabels[i] + ": " + result.scores[i].toFixed(2);
