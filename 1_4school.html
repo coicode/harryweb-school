@@ -86,7 +86,7 @@
                     const scores = result.scores; // probability of prediction for each class
                     // render the probability scores per class
                     console.log(scores[1]);
-                    if(scores[1] < 0.65) {
+                    if(scores[1] < 0.8) {
                       console.log('normal');
                     } else {
                       console.log('snap');
@@ -106,7 +106,6 @@
                 // setTimeout(() => recognizer.stopListening(), 5000);
             }
             init();
-        </script>
     </div>
   </div>
  </body>
