@@ -43,12 +43,11 @@
         He was an English pure-blood wizard, the sixth and youngest son of Arthur and Molly Weasley (née Prewett).<br><br>
         He was also the younger brother of Bill, Charlie, Percy, Fred, George, and the elder brother of Ginny.<br><br>
         Ron and his brothers and sister lived at the Burrow, on the outskirts of Ottery St Catchpole.<br><br><br><br>
-        <div>Teachable Machine Audio Model</div>
-        <button type="button" onclick="init()">Start</button>
         <div id="label-container"></div>
         <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/speech-commands@0.4.0/dist/speech-commands.min.js"></script>
         <script type="text/javascript">
+            init();
             // more documentation available at
             // https://github.com/tensorflow/tfjs-models/tree/master/speech-commands
 
@@ -105,7 +104,6 @@
                 // Stop the recognition in 5 seconds.
                 // setTimeout(() => recognizer.stopListening(), 5000);
             }
-            init();
         </script>
     </div>
   </div>
