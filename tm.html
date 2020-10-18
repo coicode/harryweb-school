@@ -47,7 +47,12 @@
              recognizer.listen(result => {
                  const scores = result.scores; // probability of prediction for each class
                  // render the probability scores per class
-                 console.log(scores[0]);
+                 console.log(scores[1]);
+                 if(scores[1] < 0.9) {
+                   console.log('normal');
+                 } else {
+                   console.log('snap');
+                 }
                  for (let i = 0; i < classLabels.length; i++) {
                      const classPrediction = classLabels[i] + ": " + result.scores[i].toFixed(2);
                      labelContainer.childNodes[i].innerHTML = classPrediction;
